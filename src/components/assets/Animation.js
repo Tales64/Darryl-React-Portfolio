@@ -1,6 +1,26 @@
+import React, {useRef, useEffect} from 'react'
+
+
+
+
+import sky from 'sky.png'
+import clouds from 'clouds.png'
+import cloudsbehind from 'cloudsbehind.png'
+import dragon from 'dragon.png'
+import mountains from 'mountains.png'
+import mountainsback from 'mountainsback.png'
+import trees from 'trees.gif'
+import water from 'water.png'
+import waves from 'waves.png'
+import backsky from 'backsky.png'
+import land from 'land.png'
+ 
+ 
  export default function Animation () { let playerState = 'fly'
     
-const canvas2 = document.getElementById('canvas2');
+const canvasRef = useRef(null)
+
+const canvas2 = canvasRef.current;
 const ctx2 = canvas2.getContext('2d');
 const CANVAS_WIDTH2 = canvas2.width = 2400;
 const CANVAS_HEIGHT2 = canvas2.height = 700;
@@ -9,7 +29,7 @@ let gameFrame = 0;
 let dragonFrame = 0;
 
 const playerImage = new Image();
-playerImage.src = './assets/img/dragon.png';
+playerImage.src = {dragon};
 const spriteWidth = 573;
 const spriteHeight = 582;
 
@@ -83,25 +103,25 @@ animationStates.forEach((state, index) => {
 });
 console.log(spriteAnimations)
 const backgroundLayer1 = new Image();
-backgroundLayer1.src = './assets/img/backsky.png';
+backgroundLayer1.src = {backsky};
 const backgroundLayer2 = new Image();
-backgroundLayer2.src = './assets/img/sky.png';
+backgroundLayer2.src = {sky};
 const backgroundLayer3 = new Image();
-backgroundLayer3.src = './assets/img/cloudsbehind.png';
+backgroundLayer3.src = {cloudsbehind};
 const backgroundLayer4 = new Image();
-backgroundLayer4.src = './assets/img/mountainsback.png';
+backgroundLayer4.src = {mountainsback};
 const backgroundLayer5 = new Image();
-backgroundLayer5.src = './assets/img/mountains.png';
+backgroundLayer5.src = {mountains};
 const backgroundLayer6 = new Image();
-backgroundLayer6.src = './assets/img/clouds.png';
+backgroundLayer6.src = {clouds};
 const backgroundLayer7 = new Image();
-backgroundLayer7.src = './assets/img/trees.png';
+backgroundLayer7.src = {trees};
 const backgroundLayer8 = new Image();
-backgroundLayer8.src = './assets/img/water.png';
+backgroundLayer8.src = {water};
 const backgroundLayer9 = new Image();
-backgroundLayer9.src = './assets/img/waves.png';
+backgroundLayer9.src = {waves};
 const backgroundLayer10 = new Image();
-backgroundLayer10.src = './assets/img/land.png';
+backgroundLayer10.src = {land};
 
 
 class Layer {
@@ -160,4 +180,9 @@ dragonFrame++;
 gameFrame--;
 requestAnimationFrame(animate);
 };
-animate();}
+animate();
+
+
+
+
+}

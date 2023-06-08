@@ -5,6 +5,7 @@ export default function Navbar ({currentPage, handlePageChange}) {
     
     return (
         <div className='header'>
+            
             <img src={Myface} class="rounded float-end" alt="..."></img>
         <h1 style={{margin: `3%`, padding: `2%`}}>Darryl Tillman</h1>
         
