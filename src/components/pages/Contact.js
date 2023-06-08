@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact () {
     return (
-        <div className='contact'>
+        <div className='contact' class = '{color}--bs-info {color}-bs-warning'>
         <p>I am open to any job opportunities and can be reached through any of these methods.</p>
         <ul className='contact-ul'>
             <li className='contact-li'>

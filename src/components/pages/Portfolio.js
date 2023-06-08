@@ -1,10 +1,11 @@
 import React from 'react';
 
-import gameHoard from './../../assets/gamehoard.PNG'
-import hobbyTracker from './../../assets/hobbytracker.PNG'
-import READMEgenerator from './../../assets/readmegenerator.PNG'
-import socialNetworkAPI from './../../assets/socialnetworkAPI.PNG'
-import weatherDashboard from './../../assets/weatherdashboard.PNG'
+import gameHoard from '../assets/gamehoard.PNG'
+import bookemon from '../assets/Bookemon.gif'
+import Refactoring from '../assets/127.0.0.1_5500_Develop_index2.html.PNG'
+import PlentifulPantry from '../assets/PlentifulPantry.PNG'
+import weatherDashboard from '../assets/weatherdashboard.PNG'
+// import Animation from 'Animation'
 
 
 export default function Portfolio () {
@@ -17,9 +18,9 @@ export default function Portfolio () {
     return (
         <div className='portfolio-card-container'>
             <div className='portfolio-card' id='portfolio-card-1'>
-                <a href='https://diangigrich.github.io/PineappleMotivator/index.html#' target="_blank" rel="noreferrer">
-                    <h5>Hobby Tracker</h5>
-                    <img src={hobbyTracker} className="d-block w-100" alt="hobby tracker website"/>
+                <a href="https://tales64.github.io/New-Refactoring/#search-engine-optimization" target="_blank" rel="noreferrer">
+                    <h5>Refactoring</h5>
+                    <img src={Refactoring} className="d-block w-100" alt="hobby tracker website"/>
                     <p>This application allows the user to 'level up' as they complete tasks and get rewarded with YouTube videos based on their personal preferences.</p>
                 </a>
             </div>
@@ -31,23 +32,23 @@ export default function Portfolio () {
                 </a>
             </div>
             <div className='portfolio-card' id='portfolio-card-3'>
-                <a href='https://Darryl-Tillman.github.io/weather-dashboard/' target="_blank" rel="noreferrer">
-                    <h5>Weather Dashboard</h5>
-                    <img src={weatherDashboard} className="d-block w-100" alt="weather dashboard app"/>
+                <a href="https://btay786.github.io/1-project-to-rule/" target="_blank" rel="noreferrer">
+                    <h5>Bookemon</h5>
+                    <img src={bookemon} className="d-block w-100" alt="weather dashboard app"/>
                     <p>Allows the user to check the weather for any city in the US; utilizes a 3rd party API. Utilizes local storage and a 3rd party weather API.</p>
                 </a>
             </div>
             <div className='portfolio-card' id='portfolio-card-4'>
-                <a href='https://github.com/Darryl-Tillman/social-network-API' target="_blank" rel="noreferrer">
+                <a href='' target="_blank" rel="noreferrer">
                     <h5>Social Network API</h5>
-                    <img src={socialNetworkAPI} className="d-block w-100" alt="A social media API that returns user data as JSON"/>
+                    <img src={PlentifulPantry} className="d-block w-100" alt="A social media API that returns user data as JSON"/>
                     <p>Utilizes a Mongo database to replicate social network functionality without a frontend.</p>
                 </a>
             </div>
             <div className='portfolio-card' id='portfolio-card-5'>
-                <a href='https://github.com/Darryl-Tillman/professional-README-generator' target="_blank" rel="noreferrer">
-                    <h5>Professional README Generator</h5>
-                    <img src={READMEgenerator} className="d-block w-100" id="README-img" alt="Console/command line app that generates a README file"/>
+                <a href="https://plentiful-pantry.herokuapp.com/api/users/login" target="_blank" rel="noreferrer">
+                    <h5>Plentiful Pantry</h5>
+                    <img src={weatherDashboard} className="d-block w-100" id="README-img" alt="Console/command line app that generates a README file"/>
                     <p>Allows a user to create a README file for their app in the console/command line through a series of prompts. Utilizes inquirer Node.js package.</p>
                 </a>
             </div>

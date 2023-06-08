@@ -3,14 +3,14 @@ import React from 'react';
 export default function Resume () {
 
     function downloadResume () {
-        fetch('killingsworthResumeDec2022.pdf').then(response => {
+        fetch('DarrylResumeDec2022.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'killingsworthResumeDec2022.pdf';
+                alink.download = 'DarrylResumeDec2022.pdf';
                 alink.click();
             })
         })

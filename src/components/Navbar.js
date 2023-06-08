@@ -1,11 +1,14 @@
 import React from 'react';
+import Myface from './assets/Profilesmall.png';
 
 export default function Navbar ({currentPage, handlePageChange}) {
     
     return (
         <div className='header'>
-        <h1 style={{margin: `3%`, padding: `2%`}}>Kristen Killingsworth</h1>
-        <ul className="nav nav-tabs">
+            <img src={Myface} class="rounded float-end" alt="..."></img>
+        <h1 style={{margin: `3%`, padding: `2%`}}>Darryl Tillman</h1>
+        
+        <ul className="nav nav-underline">
             <li className="nav-item">
                 <a href='#Portfolio' className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}onClick={()=>handlePageChange("Portfolio")}>Portfolio</a>
             </li>
