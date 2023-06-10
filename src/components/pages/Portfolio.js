@@ -1,10 +1,10 @@
 import React from 'react';
 
-import gameHoard from '../assets/gamehoard.PNG'
-import bookemon from '../assets/Bookemon.gif'
-import Refactoring from '../assets/127.0.0.1_5500_Develop_index2.html.PNG'
-import PlentifulPantry from '../assets/PlentifulPantry.PNG'
-import weatherDashboard from '../assets/weatherdashboard.PNG'
+import gameHoard from '../../../../src/components/assets/gamehoard.PNG'
+import bookemon from '../../../../src/components/assets/Bookemon.gif'
+import Refactoring from '../../../../src/components/assets/127.0.0.1_5500_Develop_index2.html.PNG'
+import PlentifulPantry from '../../../../src/components/assets/PlentifulPantry.PNG'
+import weatherDashboard from '../../../../src/components/assets/weatherdashboard.PNG'
 // import Animation from 'Animation'
 
 

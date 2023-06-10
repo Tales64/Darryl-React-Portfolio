@@ -1,5 +1,5 @@
 import React from 'react';
-import Myface from './assets/Profilesmall.png';
+import Myface from '../../../src/components/assets/Profilesmall.png';
 
 export default function Navbar ({currentPage, handlePageChange}) {
     
