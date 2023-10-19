@@ -1,7 +1,7 @@
 import React from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
 
-import "../src/App.css"
+import "./App.css"
 
 export default function App () {
   
